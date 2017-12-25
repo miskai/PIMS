@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>loginRegister.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LookMessageServlet</servlet-name>
+        <servlet-class>lookMessage.LookMessageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LookMessageServlet</servlet-name>
+        <url-pattern>/LookMessageServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateMessageServlet</servlet-name>
+        <servlet-class>lookMessage.UpdateMessageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateMessageServlet</servlet-name>
+        <url-pattern>/UpdateMessageServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdatePasswordServlet</servlet-name>
+        <servlet-class>lookMessage.UpdatePasswordServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdatePasswordServlet</servlet-name>
+        <url-pattern>/UpdatePasswordServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LookFriendServlet</servlet-name>
+        <servlet-class>friendManager.LookFriendServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LookFriendServlet</servlet-name>
+        <url-pattern>/LookFriendServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddFriendServlet</servlet-name>
+        <servlet-class>friendManager.AddFriendServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddFriendServlet</servlet-name>
+        <url-pattern>/AddFriendServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateFriendServlet</servlet-name>
+        <servlet-class>friendManager.UpdateFriendServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateFriendServlet</servlet-name>
+        <url-pattern>/UpdateFriendServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateFriendsMessageServlet</servlet-name>
+        <servlet-class>friendManager.UpdateFriendsMessageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateFriendsMessageServlet</servlet-name>
+        <url-pattern>/UpdateFriendsMessageServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteFriendServlet</servlet-name>
+        <servlet-class>friendManager.DeleteFriendServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteFriendServlet</servlet-name>
+        <url-pattern>/DeleteFriendServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LookDateServlet</servlet-name>
+        <servlet-class>dateManager.LookDateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LookDateServlet</servlet-name>
+        <url-pattern>/LookDateServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddDateServlet</servlet-name>
+        <servlet-class>dateManager.AddDateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddDateServlet</servlet-name>
+        <url-pattern>/AddDateServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateDateServlet</servlet-name>
+        <servlet-class>dateManager.UpdateDateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateDateServlet</servlet-name>
+        <url-pattern>/UpdateDateServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteDateServlet</servlet-name>
+        <servlet-class>dateManager.DeleteDateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteDateServlet</servlet-name>
+        <url-pattern>/DeleteDateServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>loginRegister.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/RegisterServlet</url-pattern>
+    </servlet-mapping>
+    <context-param>
+        <param-name>webAppRootKey</param-name>
+        <param-value>uploadAndDownload</param-value>
+    </context-param>
+    <welcome-file-list>
+        <welcome-file>index2.jsp</welcome-file>
+        <welcome-file>index.htm</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>default.html</welcome-file>
+        <welcome-file>default.htm</welcome-file>
+        <welcome-file>default.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
